@@ -37,11 +37,15 @@ Coordination number (Samordningsnummer) should also be a valid personnummer.
 
 ### Short format
 
+Output for `format` method
+
 ```
 YYMMDD-XXXX
 ```
 
 ### Long format
+
+Output for `format` method
 
 ```
 YYYYMMDDXXXX
