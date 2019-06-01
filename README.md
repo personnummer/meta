@@ -1,7 +1,7 @@
 # meta
 Organization meta
 
-## Package Specification
+## Package Specification (v2)
 
 The personnummer package should have a `valid` method that can take both a number and a string as input.
 
