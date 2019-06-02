@@ -1,6 +1,15 @@
 # meta
 Organization meta
 
+## Package Specification (v1)
+
+The personnummer package should have a `valid` method that can take both a number and a string as input.
+
+```
+personnummer.valid(string)
+personnummer.valid(number)
+```
+
 ## Package Specification (v2)
 
 The personnummer package should have a `valid` method that can take both a number and a string as input.
