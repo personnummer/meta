@@ -28,6 +28,13 @@ personnummer.format(number, boolean)
 personnummer.format(string, boolean)
 ```
 
+The package should include a `getAge` method that returns the age from a personnummer. For coordination number (Samordningsnummer) we should remove `60` to get the right age.
+
+```
+personnummer.getAge(number)
+personnummer.getAge(string)
+```
+
 ### Input value format
 
 Dash or plus should be optional.
