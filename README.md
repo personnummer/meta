@@ -23,11 +23,11 @@ personnummer.valid(number, [bool includeCoordinationNumber = true])
 
 The package should include a `format` method that can format the input value (string or number) as a short or long personnumer.
 
-The second argument should be a boolean and `true` should format the input value as a long personnummer.
+The second argument should be a optional boolean and `true` should format the input value as a long personnummer.
 
 ```
-personnummer.format(number, boolean)
-personnummer.format(string, boolean)
+personnummer.format(number, [bool longFormat = false])
+personnummer.format(string, [bool longFormat = false])
 ```
 
 The package should include a `getAge` method that returns the age from a personnummer. For coordination number (Samordningsnummer) we should remove `60` to get the right age.
