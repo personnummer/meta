@@ -14,9 +14,11 @@ personnummer.valid(number)
 
 The personnummer package should have a `valid` method that can take both a number and a string as input.
 
+The second argument should be a boolean that exclude coordination number (Samordningsnummer) from validation.
+
 ```
-personnummer.valid(string)
-personnummer.valid(number)
+personnummer.valid(string, [bool includeCoordinationNumber = true])
+personnummer.valid(number, [bool includeCoordinationNumber = true])
 ```
 
 The package should include a `format` method that can format the input value (string or number) as a short or long personnumer.
@@ -30,9 +32,11 @@ personnummer.format(string, boolean)
 
 The package should include a `getAge` method that returns the age from a personnummer. For coordination number (Samordningsnummer) we should remove `60` to get the right age.
 
+The second argument should be a boolean that exclude coordination number (Samordningsnummer) from validation.
+
 ```
-personnummer.getAge(number)
-personnummer.getAge(string)
+personnummer.getAge(number, [bool includeCoordinationNumber = true])
+personnummer.getAge(string, [bool includeCoordinationNumber = true])
 ```
 
 ### Input value format
