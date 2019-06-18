@@ -12,7 +12,7 @@ Organization meta
 | [JavaScript](https://github.com/personnummer/js) | 1.0.0 | 1.0  | [![Build Status](https://travis-ci.org/personnummer/js.svg?branch=master)](https://travis-ci.org/personnummer/js) |
 | [Kotlin](https://github.com/personnummer/kotlin) | 1.0.0 | 1.0  | [![Build Status](https://travis-ci.org/personnummer/kotlin.svg?branch=master)](https://travis-ci.org/personnummer/kotlin) |
 | [PHP](https://github.com/personnummer/php) | 1.2.1 | 1.0 | [![Build Status](https://travis-ci.org/personnummer/php.svg?branch=master)](https://travis-ci.org/personnummer/php) |
-| [Python](https://github.com/personnummer/python) | 1.0.2 |  1.0 | [![Build Status](https://travis-ci.org/personnummer/php.svg?branch=master)](https://travis-ci.org/personnummer/php) |
+| [Python](https://github.com/personnummer/python) | 1.0.2 |  1.0 | [![Build Status](https://travis-ci.org/personnummer/python.svg?branch=master)](https://travis-ci.org/personnummer/python) |
 | [Ruby](https://github.com/personnummer/ruby) | 1.0.0 | 1.0  | [![Build Status](https://travis-ci.org/personnummer/ruby.svg?branch=master)](https://travis-ci.org/personnummer/ruby) |
 | [Swift](https://github.com/personnummer/swift) | 1.0.0 | 1.0  | [![Build Status](https://travis-ci.org/personnummer/swift.svg?branch=master)](https://travis-ci.org/personnummer/swift) |
 
