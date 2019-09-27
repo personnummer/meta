@@ -88,7 +88,7 @@ YYYYMMDDXXXX
 
 ## Package Specification (v2.1)
 
-This specification adds new feature to 2.1 and include all parts from 2.0.
+This specification adds new features and includes all parts from 2.0.
 
 ```
 personnummer.isMale(number|string, [bool includeCoordinationNumber = true])
