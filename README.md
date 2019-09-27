@@ -90,6 +90,8 @@ YYYYMMDDXXXX
 
 This specification adds new features and includes all parts from 2.0.
 
+The package should include `isMale` and `isFemale` methods that can check if the personnummer or coordination number is a female or male.
+
 ```
 personnummer.isMale(number|string, [bool includeCoordinationNumber = true])
 personnummer.isFemale(number|string, [bool includeCoordinationNumber = true])
