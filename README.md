@@ -85,3 +85,14 @@ Output for `format` method
 ```
 YYYYMMDDXXXX
 ```
+
+## Package Specification (v2.1)
+
+This specification adds new feature to 2.1 and include all parts from 2.0.
+
+```
+personnummer.isMale(number|string, [bool includeCoordinationNumber = true])
+personnummer.isFemale(number|string, [bool includeCoordinationNumber = true])
+```
+
+This methods should throw errors when input value is not a valid personnummer or coordination number.
