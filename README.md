@@ -16,6 +16,20 @@ Organization meta
 | [Ruby](https://github.com/personnummer/ruby) | 1.0.0 | 1.0  | [![Build Status](https://travis-ci.org/personnummer/ruby.svg?branch=master)](https://travis-ci.org/personnummer/ruby) |
 | [Swift](https://github.com/personnummer/swift) | 1.0.0 | 1.0  | [![Build Status](https://travis-ci.org/personnummer/swift.svg?branch=master)](https://travis-ci.org/personnummer/swift) |
 
+## License Specification
+
+We use the [MIT license](https://opensource.org/licenses/MIT) for all packages and the copyright row should look like this:
+
+```
+Copyright (c) START-END - Personnummer and Contributors
+```
+
+or when single year:
+
+```
+Copyright (c) START - Personnummer and Contributors
+```
+
 ## Package Specification (v1)
 
 The personnummer package should have a `valid` method that can take both a number and a string as input.
