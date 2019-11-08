@@ -3,18 +3,18 @@ Organization meta
 
 ## Implementations
 
-| Package | Pkg Version | Spec Version | Status |
-|---|---|---|---|
-| [C#](https://github.com/personnummer/csharp) | 1.0.2 | 1.0 | [![Build status](https://ci.appveyor.com/api/projects/status/ajkcx0gg8rke8hx2?svg=true)](https://ci.appveyor.com/project/frozzare/csharp/branch/master) |
-| [Dart](https://github.com/personnummer/dart) | 2.0.0 | 2.0 | [![Build Status](https://travis-ci.org/personnummer/dart.svg?branch=master)](https://travis-ci.org/personnummer/dart) |
-| [Go](https://github.com/personnummer/go) | 1.1.0 | 1.0 | [![Build Status](https://travis-ci.org/personnummer/go.svg?branch=master)](https://travis-ci.org/personnummer/go) |
-| [Java](https://github.com/personnummer/java) | 1.0.0 | 1.0  | [![Build Status](https://travis-ci.org/personnummer/java.svg?branch=master)](https://travis-ci.org/personnummer/java) |
-| [JavaScript](https://github.com/personnummer/js) | 2.0.1 | 2.0  | [![Build Status](https://travis-ci.org/personnummer/js.svg?branch=master)](https://travis-ci.org/personnummer/js) |
-| [Kotlin](https://github.com/personnummer/kotlin) | 1.0.0 | 1.0  | [![Build Status](https://travis-ci.org/personnummer/kotlin.svg?branch=master)](https://travis-ci.org/personnummer/kotlin) |
-| [PHP](https://github.com/personnummer/php) | 2.0.0 | 2.1 | [![Build Status](https://travis-ci.org/personnummer/php.svg?branch=master)](https://travis-ci.org/personnummer/php) |
-| [Python](https://github.com/personnummer/python) | 1.0.2 |  1.0 | [![Build Status](https://travis-ci.org/personnummer/python.svg?branch=master)](https://travis-ci.org/personnummer/python) |
-| [Ruby](https://github.com/personnummer/ruby) | 1.0.0 | 1.0  | [![Build Status](https://travis-ci.org/personnummer/ruby.svg?branch=master)](https://travis-ci.org/personnummer/ruby) |
-| [Swift](https://github.com/personnummer/swift) | 1.0.0 | 1.0  | [![Build Status](https://travis-ci.org/personnummer/swift.svg?branch=master)](https://travis-ci.org/personnummer/swift) |
+| Package | Pkg Version | Spec Version | Status | Maintainer |
+|---|---|---|---|---|
+| [C#](https://github.com/personnummer/csharp) | 1.0.2 | 1.0 | [![Build status](https://ci.appveyor.com/api/projects/status/ajkcx0gg8rke8hx2?svg=true)](https://ci.appveyor.com/project/frozzare/csharp/branch/master) | [@Johannestegner](https://github.com/johannestegner)
+| [Dart](https://github.com/personnummer/dart) | 2.0.0 | 2.0 | [![Build Status](https://travis-ci.org/personnummer/dart.svg?branch=master)](https://travis-ci.org/personnummer/dart) | [@frozzare](https://github.com/frozzare)
+| [Go](https://github.com/personnummer/go) | 1.1.0 | 1.0 | [![Build Status](https://travis-ci.org/personnummer/go.svg?branch=master)](https://travis-ci.org/personnummer/go) | [@frozzare](https://github.com/frozzare)
+| [Java](https://github.com/personnummer/java) | 1.0.0 | 1.0  | [![Build Status](https://travis-ci.org/personnummer/java.svg?branch=master)](https://travis-ci.org/personnummer/java) | [@Johannestegner](https://github.com/johannestegner)
+| [JavaScript](https://github.com/personnummer/js) | 2.0.1 | 2.0  | [![Build Status](https://travis-ci.org/personnummer/js.svg?branch=master)](https://travis-ci.org/personnummer/js) | [@frozzare](https://github.com/frozzare)
+| [Kotlin](https://github.com/personnummer/kotlin) | 1.0.0 | 1.0  | [![Build Status](https://travis-ci.org/personnummer/kotlin.svg?branch=master)](https://travis-ci.org/personnummer/kotlin) | [@Johannestegner](https://github.com/johannestegner)
+| [PHP](https://github.com/personnummer/php) | 2.0.0 | 2.1 | [![Build Status](https://travis-ci.org/personnummer/php.svg?branch=master)](https://travis-ci.org/personnummer/php) | [@rasmusbe](https://github.com/rasmusbe)
+| [Python](https://github.com/personnummer/python) | 1.0.2 |  1.0 | [![Build Status](https://travis-ci.org/personnummer/python.svg?branch=master)](https://travis-ci.org/personnummer/python) | [@frozzare](https://github.com/frozzare)
+| [Ruby](https://github.com/personnummer/ruby) | 1.0.0 | 1.0  | [![Build Status](https://travis-ci.org/personnummer/ruby.svg?branch=master)](https://travis-ci.org/personnummer/ruby) | [@frozzare](https://github.com/frozzare)
+| [Swift](https://github.com/personnummer/swift) | 1.0.0 | 1.0  | [![Build Status](https://travis-ci.org/personnummer/swift.svg?branch=master)](https://travis-ci.org/personnummer/swift) | You?
 
 ## License Specification
 
