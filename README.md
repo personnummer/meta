@@ -14,7 +14,7 @@ Organization meta
 | [PHP](https://github.com/personnummer/php) | 2.0.0 | 2.1.0 | [![Build Status](https://travis-ci.org/personnummer/php.svg?branch=master)](https://travis-ci.org/personnummer/php) | [@rasmusbe](https://github.com/rasmusbe)
 | [Python](https://github.com/personnummer/python) | 1.0.2 |  1.0 | [![Build Status](https://travis-ci.org/personnummer/python.svg?branch=master)](https://travis-ci.org/personnummer/python) | [@frozzare](https://github.com/frozzare)/You?
 | [Ruby](https://github.com/personnummer/ruby) | 1.0.0 | 1.0  | [![Build Status](https://travis-ci.org/personnummer/ruby.svg?branch=master)](https://travis-ci.org/personnummer/ruby) | [@frozzare](https://github.com/frozzare)/You?
-| [Swift](https://github.com/personnummer/swift) | 1.0.0 | 1.0  | [![Build Status](https://travis-ci.org/personnummer/swift.svg?branch=master)](https://travis-ci.org/personnummer/swift) | [GoranLilja](https://github.com/GoranLilja)
+| [Swift](https://github.com/personnummer/swift) | 1.0.0 | 1.0  | [![Build Status](https://travis-ci.org/personnummer/swift.svg?branch=master)](https://travis-ci.org/personnummer/swift) | [@GoranLilja](https://github.com/GoranLilja)
 
 ## License Specification
 
