@@ -1,0 +1,59 @@
+Ogiltig testdata:
+const invalidNumbers = [
+  null,
+  [],
+  true,
+  false,
+  0,
+  '19112233-4455',
+  '20112233-4455',
+  '9999999999',
+  '199999999999',
+  '199909193776',
+  'Just a string',
+];
+Giltiga personnummer:
+- 8507099805 (nummer)
+- 198507099805
+- 198507099813
+- 850709-9813
+- 196411139808
+Ej giltiga (saknar kontrollsiffra)
+- 19850709980
+- 19850709981
+- 19641113980
+Giltiga sammordningsnummer:
+- 198507699802
+- 850769-9802
+- 198507699810
+- 850769-9810
+Ej giltigt sammordningsnummer:
+- 198567099805
+Formatering:
+- 19850709-9805 => 850709-9805 (kort)
+- 198507099813 => 850709-9813 (kort)
+- 19850709-9805 => 198507099805 (lång)
+- 198507099813 => 198507099813 (lång)
+- 19850709+9805 => 850709-9805 (kort)
+- 19121212-1212 => 121212+1212 (kort)
+Ålder (låst vid datum 2019-07-13):
+- 198507099805 => 34
+- 198507099813 => 34
+- 196411139808 => 54
+- 19121212+1212 => 106
+Ålder sammordningsnummer (låst vid datum 2019-07-13):
+- 198507699810 => 34
+- 198507699802 => 34
+Ålder med sammordningsnummer avslaget:
+- 198507699810 => 0
+- 198507699802 => 0
+Sex:
+- 198507099813 => isMale => true (nummer)
+- 198507099813 => isFemale => false (nummer)
+- 198507099805 => isFemale => true
+- 198507099805 => isMale => false
+Sex sammordningsnummer:
+- 198507099813 => isMale => true
+- 198507099813 => isFemale => false
+- 198507699802 => isFemale => true
+- 198507699802 => isMale => false
