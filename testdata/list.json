@@ -1,0 +1,83 @@
+[
+    {
+        "integer": 198507099805,
+        "long_format": "198507099805",
+        "short_format": "8507099805",
+        "separated_format": "850709-099805",
+        "separated_long": "19850709-099805",
+        "valid": true,
+        "type": "ssn"
+    },
+    {
+        "integer": 198507099813,
+        "long_format": "198507099813",
+        "short_format": "8507099813",
+        "separated_format": "850709-099813",
+        "separated_long": "19850709-099813",
+        "valid": true,
+        "type": "ssn"
+    },
+    {
+        "integer": 196411139808,
+        "long_format": "196411139808",
+        "short_format": "6411139808",
+        "separated_format": "641113-139808",
+        "separated_long": "19641113-139808",
+        "valid": true,
+        "type": "ssn"
+    },
+    {
+        "integer": 19850709980,
+        "long_format": "19850709980",
+        "short_format": "850709980",
+        "separated_format": "850709-09980",
+        "separated_long": "19850709-09980",
+        "valid": false,
+        "type": "ssn"
+    },
+    {
+        "integer": 19850709981,
+        "long_format": "19850709981",
+        "short_format": "850709981",
+        "separated_format": "850709-09981",
+        "separated_long": "19850709-09981",
+        "valid": false,
+        "type": "ssn"
+    },
+    {
+        "integer": 19641113980,
+        "long_format": "19641113980",
+        "short_format": "641113980",
+        "separated_format": "641113-13980",
+        "separated_long": "19641113-13980",
+        "valid": false,
+        "type": "ssn"
+    },
+    {
+        "integer": 198507699802,
+        "long_format": "198507699802",
+        "short_format": "8507699802",
+        "separated_format": "850769-699802",
+        "separated_long": "19850769-699802",
+        "valid": true,
+        "type": "con"
+    },
+    {
+        "integer": 198507699810,
+        "long_format": "198507699810",
+        "short_format": "8507699810",
+        "separated_format": "850769-699810",
+        "separated_long": "19850769-699810",
+        "valid": true,
+        "type": "con"
+    },
+    {
+        "integer": 198567099805,
+        "long_format": "198567099805",
+        "short_format": "8567099805",
+        "separated_format": "856709-099805",
+        "separated_long": "19856709-099805",
+        "valid": false,
+        "type": "con"
+    }
+]
