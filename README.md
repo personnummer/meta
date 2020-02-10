@@ -119,7 +119,7 @@ Version 3 will contain breaking changes and will not be compatible with version 
 
 ### Breaking changes
 
-This functions will be moved into the class:
+These functions will be moved into the class:
 
 * format
 * getAge
@@ -129,11 +129,11 @@ This functions will be moved into the class:
 
 ### Valid
 
-The valid method version that supports numbers argument will be removed.
+The valid method version that supports number arguments will be removed.
 
 ### Class
 
-The package should include a class that should be the return value of `parse` 
+The package should include a class that which should be the return value of `parse` 
 
 ```js
 class Personnummer {
@@ -143,7 +143,7 @@ class Personnummer {
 
 ### Parse
 
-The package should include a `parse` method that create a new instance of the new class.
+The package should include a `parse` method that creates a new instance of the new class.
 
 The `parse` and the class constructor should contain a second argument with options for the feature.
 
@@ -153,7 +153,7 @@ personnummer.parse(string, array|object|languageSpecific) => new class instance
 
 ### Coordination numbers
 
-The option for coordination number option will be removed for all method and be replaced with `isCoordinationNumber` method instead.
+The coordination number option will be removed for all methods and be replaced with `isCoordinationNumber` method or property instead.
 
 ```js
 const pnr = personnummer.parse(string)
@@ -165,7 +165,7 @@ if (pnr.isCoordinationNumber()) {
 
 ### Error handling
 
-All methods except for `isValid/valid` should throw exception or return a error as a second return value. Error handling may be different depending on language.
+All methods except for `isValid/valid` should throw an exception or return an error as a second return value. Error handling may be different depending on language.
 
 ### Options
 
