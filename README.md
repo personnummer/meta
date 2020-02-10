@@ -34,7 +34,7 @@ Copyright (c) START - Personnummer and Contributors
 
 The personnummer package should have a `valid` method that can take both a number and a string as input.
 
-```
+```js
 personnummer.valid(string)
 personnummer.valid(number)
 ```
@@ -45,7 +45,7 @@ The personnummer package should have a `valid` method that can take both a numbe
 
 The second argument should be a optional boolean that exclude coordination number (Samordningsnummer) from validation.
 
-```
+```js
 personnummer.valid(string, [bool includeCoordinationNumber = true])
 personnummer.valid(number, [bool includeCoordinationNumber = true])
 ```
@@ -54,7 +54,7 @@ The package should include a `format` method that can format the input value (st
 
 The second argument should be a optional boolean and `true` should format the input value as a long personnummer.
 
-```
+```js
 personnummer.format(number, [bool longFormat = false])
 personnummer.format(string, [bool longFormat = false])
 ```
@@ -63,7 +63,7 @@ The package should include a `getAge` method that returns the age from a personn
 
 The second argument should be a optional boolean that exclude coordination number (Samordningsnummer) from validation.
 
-```
+```js
 personnummer.getAge(number, [bool includeCoordinationNumber = true])
 personnummer.getAge(string, [bool includeCoordinationNumber = true])
 ```
@@ -106,9 +106,99 @@ This specification adds new features and includes all parts from 2.0.
 
 The package should include `isMale` and `isFemale` methods that can check if the personnummer or coordination number is a female or male.
 
-```
+```js
 personnummer.isMale(number|string, [bool includeCoordinationNumber = true])
 personnummer.isFemale(number|string, [bool includeCoordinationNumber = true])
 ```
 
 This methods should throw errors when input value is not a valid personnummer or coordination number.
+
+## Package Specification (v3)
+
+Version 3 will contain breaking changes and will not be compatible with version 1 or 2.
+
+### Breaking changes
+
+This functions will be moved into the class:
+
+* format
+* getAge
+* isFemale
+* isMale
+
+
+### Valid
+
+The valid method version that supports numbers argument will be removed.
+
+### Class
+
+The package should include a class that should be the return value of `parse` 
+
+```js
+class Personnummer {
+    public function __construct(string, array|object|languageSpecific)
+}
+```
+
+### Parse
+
+The package should include a `parse` method that create a new instance of the new class.
+
+The `parse` and the class constructor should contain a second argument with options for the feature.
+
+```js
+personnummer.parse(string, array|object|languageSpecific) => new class instance
+```
+
+### Coordination numbers
+
+The option for coordination number option will be removed for all method and be replaced with `isCoordinationNumber` method instead.
+
+```js
+const pnr = personnummer.parse(string)
+
+if (pnr.isCoordinationNumber()) {
+    return
+}
+```
+
+### Error handling
+
+All methods except for `isValid/valid` should throw exception or return a error as a second return value. Error handling may be different depending on language.
+
+### Options
+
+Options may be different depending on language.
+
+### Pseudo-interface
+
+```js
+interface Personnummer {
+    string age;
+    string century;
+    string fullYear;
+    string year;
+    string month;
+    string day;
+    string sep;
+    string num;
+    string check;
+
+    public function __construct(string ssn, array|object|languageSpecific options = []);
+
+    public function format(boolean longFormat) : string;
+    public function isFemale() : boolean;
+    public function isMale() : boolean;
+    public function isCoordinationNumber() : boolean;
+    public function isValid() : boolean;
+}
+
+function valid(string ssn) {
+    return parse(ssn)->isValid()
+}
+
+function parse(string ssn, array|object|languageSpecific options = []) {
+    return new Personnummer(ssn, options)
+}
+```
