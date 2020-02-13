@@ -126,10 +126,9 @@ These functions will be moved into the class:
 * isFemale
 * isMale
 
-
 ### Valid
 
-The valid method version that supports number arguments will be removed.
+The valid function can be a function or a static method on the class depending on language. The vaid version that supports number arguments will be removed.
 
 ### Class
 
@@ -148,7 +147,13 @@ The package should include a `parse` method that creates a new instance of the n
 The `parse` and the class constructor should contain a second argument with options for the feature.
 
 ```js
-personnummer.parse(string, array|object|languageSpecific) => new class instance
+personnummer.parse(string, array|object|languageSpecific = []) => new class instance
+```
+
+The class should contain a static `parse` method that returns the class instance.
+
+```js
+const pnr = Personnummer::parse(string, array|object|languageSpecific = [])
 ```
 
 ### Coordination numbers
@@ -165,7 +170,7 @@ if (pnr.isCoordinationNumber()) {
 
 ### Error handling
 
-All methods except for `isValid/valid` should throw an exception or return an error as a second return value. Error handling may be different depending on language.
+All methods except for `valid` should throw an exception or return an error as a second return value. Error handling may be different depending on language. The exception/error class should be prefixed with `Personnummer`
 
 ### Options
 
@@ -187,15 +192,21 @@ interface Personnummer {
 
     public function __construct(string ssn, array|object|languageSpecific options = []);
 
+    public static function parse(string ssn);
+
     public function format(boolean longFormat) : string;
     public function isFemale() : boolean;
     public function isMale() : boolean;
     public function isCoordinationNumber() : boolean;
-    public function isValid() : boolean;
 }
 
 function valid(string ssn) {
-    return parse(ssn)->isValid()
+    try {
+       parse(ssn)
+       return true
+    } catch (PersonnummerParseException) {
+        return false
+    }
 }
 
 function parse(string ssn, array|object|languageSpecific options = []) {
