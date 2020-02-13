@@ -121,14 +121,14 @@ Version 3 will contain breaking changes and will not be compatible with version 
 
 These functions will be moved into the class:
 
-* format
-* getAge
-* isFemale
-* isMale
+* `format`
+* `getAge`
+* `isFemale`
+* `isMale`
 
 ### Valid
 
-The valid function can be a function or a static method on the class depending on language. The vaid version that supports number arguments will be removed.
+The `valid` function can be a function or a static method on the class depending on language. The vaid version that supports number arguments will be removed.
 
 ### Class
 
