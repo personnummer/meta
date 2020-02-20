@@ -132,7 +132,7 @@ The `valid` function can be a function or a static method on the class depending
 
 ### Class
 
-The package should include a class that which should be the return value of `parse` 
+The package should include a class that which should be the return value of `parse`
 
 ```js
 class Personnummer {
@@ -180,7 +180,6 @@ Options may be different depending on language.
 
 ```js
 interface Personnummer {
-    string age;
     string century;
     string fullYear;
     string year;
@@ -195,6 +194,7 @@ interface Personnummer {
     public static function parse(string ssn);
 
     public function format(boolean longFormat) : string;
+    public function getAge() : int;
     public function isFemale() : boolean;
     public function isMale() : boolean;
     public function isCoordinationNumber() : boolean;
