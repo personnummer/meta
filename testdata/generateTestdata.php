@@ -1,5 +1,4 @@
 <?php
-$list       = [];
 $structured = [];
 
 function randomNum(bool $male): int
@@ -56,19 +55,8 @@ function randomSSN(int $year = 0, bool $con = false, bool $male = true): string
     return randomDate($year, $con) . randomNum($male);
 }
 
-function createListObject(int $year = 0, bool $con = false, bool $male = true, bool $valid = true)
+function createListObjectItem(string $longFormat, bool $con = false, bool $male = true, bool $valid = true)
 {
-    $longFormat = randomSSN($year, $con, $male);
-
-    $luhn = luhn(substr($longFormat, 2));
-
-    if (!$valid) {
-        $invalidLuhns = array_values(array_diff(range(0, 9), [$luhn]));
-        $luhn         = $invalidLuhns[rand(0, count($invalidLuhns) - 1)];
-    }
-
-    $longFormat .= $luhn;
-
     $integer     = intval($longFormat);
     $shortFormat = substr($longFormat, 2);
 
@@ -88,6 +76,26 @@ function createListObject(int $year = 0, bool $con = false, bool $male = true, b
         'isFemale'         => !$male,
     ];
 }
+
+function createListObject(int $year = 0, bool $con = false, bool $male = true, bool $valid = true)
+{
+    $longFormat = randomSSN($year, $con, $male);
+
+    $luhn = luhn(substr($longFormat, 2));
+
+    if (!$valid) {
+        $invalidLuhns = array_values(array_diff(range(0, 9), [$luhn]));
+        $luhn         = $invalidLuhns[rand(0, count($invalidLuhns) - 1)];
+    }
+
+    $longFormat .= $luhn;
+
+    return createListObjectItem($longFormat, $con, $male, $valid);
+}
+
+$list = [
+    createListObjectItem('201509160006', false, false, false)
+];
 
 // Generate valid and invalid males and coordination number males
 for ($i = 0; $i < 4; $i++) {
@@ -119,5 +127,3 @@ foreach ($list as $item) {
 
 file_put_contents(__DIR__ . '/list.json', json_encode($list, JSON_PRETTY_PRINT));
 file_put_contents(__DIR__ . '/structured.json', json_encode($structured, JSON_PRETTY_PRINT));
-
-
