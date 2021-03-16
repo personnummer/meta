@@ -1,0 +1,50 @@
+[
+    {
+        "integer": 8572090606,
+        "short_format": "8572090606",
+        "separated_format": "857209-0606",
+        "valid": false,
+        "type": "org",
+        "comment": "Valid Organisationsnummer (AP fond) - None valid Personnummer"
+    },
+    {
+        "integer": 8020051952,
+        "short_format": "8020051952",
+        "separated_format": "802005-1952",
+        "valid": false,
+        "type": "org",
+        "comment": "Valid Organisationsnummer (AP fond) - None valid Personnummer"
+    },
+    {
+        "integer": 8020057538,
+        "short_format": "8020057538",
+        "separated_format": "802005-7538",
+        "valid": false,
+        "type": "org",
+        "comment": "Valid Organisationsnummer (AP fond) - None valid Personnummer"
+    },
+    {
+        "integer":  8024062302,
+        "short_format": "8024062302",
+        "separated_format": "802406-2302",
+        "valid": false,
+        "type": "org",
+        "comment": "Valid Organisationsnummer (AP fond) - None valid Personnummer"
+    },
+    {
+        "integer": 8551040721,
+        "short_format": "8551040721",
+        "separated_format": "855104-0721",
+        "valid": false,
+        "type": "org",
+        "comment": "Valid Organisationsnummer (AP fond) - None valid Personnummer"
+    },
+    {
+        "integer": 8020144120,
+        "short_format": "8020144120",
+        "separated_format": "802014-4120",
+        "valid": false,
+        "type": "org",
+        "comment": "Valid Organisationsnummer (AP fond) - None valid Personnummer"
+    }
+]
