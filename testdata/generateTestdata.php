@@ -101,9 +101,9 @@ $list = [
 $specialItems = [
     // meta@#41
     [
-        "integer" => "190905271474",
-        "long_format" => "190905271474",
-        "short_format" => "0905271474",
+        "integer" => 0,
+        "long_format" => "19090527 1474",
+        "short_format" => "090527 1474",
         "separated_format" => "090527 1474",
         "separated_long" => "19090527 1474",
         "valid" => false,
