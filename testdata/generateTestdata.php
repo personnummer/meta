@@ -95,7 +95,22 @@ function createListObject(int $year = 0, bool $con = false, bool $male = true, b
 
 $list = [
     createListObjectItem('201509160006', false, false, false),
-    createListObjectItem('190905271474', false, true, true) // js@#60
+    createListObjectItem('190905271474', false, true, true), // js@#60
+];
+
+$specialItems = [
+    // meta@#41
+    [
+        "integer" => "190905271474",
+        "long_format" => "190905271474",
+        "short_format" => "0905271474",
+        "separated_format" => "090527 1474",
+        "separated_long" => "19090527 1474",
+        "valid" => false,
+        "type" => "ssn",
+        "isMale"=> true,
+        "isFemale"=> false,
+    ]
 ];
 
 // Generate valid and invalid males and coordination number males
@@ -125,6 +140,8 @@ foreach ($list as $item) {
         $structured[$item['type']][$formatKey][$validKey][] = $item[$format];
     }
 }
+
+$list = array_merge($list, $specialItems);
 
 file_put_contents(__DIR__ . '/list.json', json_encode($list, JSON_PRETTY_PRINT));
 file_put_contents(__DIR__ . '/structured.json', json_encode($structured, JSON_PRETTY_PRINT));
