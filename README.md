@@ -30,13 +30,7 @@ Organization meta
 We use the [MIT license](https://opensource.org/licenses/MIT) for all packages and the copyright row should look like this:
 
 ```
-Copyright (c) START-END - Personnummer and Contributors
-```
-
-or when single year:
-
-```
-Copyright (c) START - Personnummer and Contributors
+Copyright (c) Personnummer and Contributors
 ```
 
 ## Package Specification (v1)
