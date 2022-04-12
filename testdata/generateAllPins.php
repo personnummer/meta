@@ -11,7 +11,9 @@ $csvUrls = [
     'https://skatteverket.entryscape.net/store/9/resource/149',
     'https://skatteverket.entryscape.net/store/9/resource/535',
     'https://skatteverket.entryscape.net/store/9/resource/686',
-    'https://skatteverket.entryscape.net/store/9/resource/1026'
+    'https://skatteverket.entryscape.net/store/9/resource/1026',
+    'https://skatteverket.entryscape.net/store/9/resource/1271',
+    'https://skatteverket.entryscape.net/store/9/resource/1580'
 ];
 
 foreach ($csvUrls as $url) {
