@@ -131,7 +131,7 @@ These functions will be moved into the class:
 
 ### Valid
 
-The `valid` function can be a function or a static method on the class depending on language. The vaid version that supports number arguments will be removed.
+The `valid` function can be a function or a static method on the class depending on language. The valid version that supports number arguments will be removed.
 
 ### Class
 
