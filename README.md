@@ -216,3 +216,26 @@ function parse(string ssn, array|object|languageSpecific options = []) {
     return new Personnummer(ssn, options)
 }
 ```
+
+## Package Specification (v3.1)
+
+This specification adds new features and includes all parts from 3.0.
+
+## Get date
+
+The package should include `getDate` function to expose the underlying date value. For coordination numbers the day should be removed with 60 days to get the correct day for a real date.
+
+## T-Number
+
+The package should support T-numbers `YYMMDD-TXXX` and include `isInterimNumber` function in the same way as `isCoordinationNumber`
+
+The `format` function should respect T-number and format the number both in the long and short way with the letter `T` in the 4-digit number.
+
+### Updated pseudo-interface
+
+```js
+interface Personnummer {
+    public function getDate() : Date;
+    public function isInterimNumber() : boolean;
+}
+```
