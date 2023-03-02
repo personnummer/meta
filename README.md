@@ -231,6 +231,8 @@ The package should support T-numbers `YYMMDD-TXXX` and include `isInterimNumber`
 
 The `format` function should respect T-number and format the number both in the long and short way with the letter `T` in the 4-digit number.
 
+Read more about T-number at [KTH](https://www.kth.se/en/student/studier/living-in-sweden/swedish-personal-identification-number/swedish-personal-identification-number-1.443883)
+
 ### Updated pseudo-interface
 
 ```js
