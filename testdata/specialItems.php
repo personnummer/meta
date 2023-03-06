@@ -13,6 +13,7 @@ $specialItems = [
         "isMale"=> true,
         "isFemale"=> false,
     ],
+    // spec v3.1
     [
         "long_format" => "20000101T220",
         "short_format" => "000101T220",
