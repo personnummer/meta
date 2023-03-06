@@ -1,5 +1,7 @@
 <?php
 
+$specVersion = '3.1';
+
 include __DIR__ . '/specialItems.php';
 
 $structured = [];
@@ -131,5 +133,9 @@ foreach ($list as $item) {
     }
 }
 
-file_put_contents(__DIR__ . '/list.json', json_encode($list, JSON_PRETTY_PRINT));
-file_put_contents(__DIR__ . '/structured.json', json_encode($structured, JSON_PRETTY_PRINT));
+if (!is_dir(__DIR__ . "/$specVersion")) {
+    mkdir(__DIR__ . "/$specVersion");
+}
+
+file_put_contents(__DIR__ . "/$specVersion/list.json", json_encode($list, JSON_PRETTY_PRINT));
+file_put_contents(__DIR__ . "/$specVersion/structured.json", json_encode($structured, JSON_PRETTY_PRINT));
