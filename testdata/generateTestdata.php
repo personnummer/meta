@@ -1,10 +1,25 @@
 <?php
 
-$specVersion = '3.1';
-
-include __DIR__ . '/specialItems.php';
-
 $structured = [];
+
+function createInterimNumbers() {
+    $numbers = [];
+    $letters = ['P', 'T','R','S','U','W','X','J','K','L','M','N'];
+    foreach ($letters as $letter) {
+        $numbers[] = [
+            "integer" => 0,
+            "long_format" => sprintf("20000101%s220",$letter),
+            "short_format" => sprintf("000101%s220",$letter),
+            "separated_format" => sprintf("000101-%s220",$letter),
+            "separated_long" => sprintf("20000101-%s220",$letter),
+            "valid" => true,
+            "type" => "interim",
+            "isMale" => false,
+            "isFemale" => false,
+        ];
+    }
+    return $numbers;
+}
 
 function randomNum(bool $male): int
 {
@@ -118,6 +133,21 @@ $list[] = createListObject(-100);
 // Generate person born 2000 (because of 00)
 $list[] = createListObject(2000);
 
+$specialItems = [
+    // meta@#41
+    [
+        "integer" => 0,
+        "long_format" => "19090527 1474",
+        "short_format" => "090527 1474",
+        "separated_format" => "090527 1474",
+        "separated_long" => "19090527 1474",
+        "valid" => false,
+        "type" => "ssn",
+        "isMale"=> true,
+        "isFemale"=> false,
+    ]
+];
+
 $list = array_merge($list, $specialItems);
 
 foreach ($list as $item) {
@@ -133,9 +163,6 @@ foreach ($list as $item) {
     }
 }
 
-if (!is_dir(__DIR__ . "/$specVersion")) {
-    mkdir(__DIR__ . "/$specVersion");
-}
-
-file_put_contents(__DIR__ . "/$specVersion/list.json", json_encode($list, JSON_PRETTY_PRINT));
-file_put_contents(__DIR__ . "/$specVersion/structured.json", json_encode($structured, JSON_PRETTY_PRINT));
+file_put_contents(__DIR__ . "/list.json", json_encode($list, JSON_PRETTY_PRINT));
+file_put_contents(__DIR__ . "/structured.json", json_encode($structured, JSON_PRETTY_PRINT));
+file_put_contents(__DIR__ . "/interim.json", json_encode(createInterimNumbers(),JSON_PRETTY_PRINT));
