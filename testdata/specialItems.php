@@ -32,8 +32,8 @@ $specialItems = [
         "isMale"=> true,
         "isFemale"=> false,
     ],
-    ...createInterimNumbers(),
     // spec v3.1
+    ...createInterimNumbers(),
     [
         "integer" => 0,
         "long_format" => "20000101A220",
