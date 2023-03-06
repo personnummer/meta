@@ -10,7 +10,7 @@ function createInterimNumbers() {
             "short_format" => sprintf("000101%s220",$letter),
             "separated_format" => sprintf("000101-%s220",$letter),
             "separated_long" => sprintf("20000101-%s220",$letter),
-            "valid" => false,
+            "valid" => true,
             "type" => "interim",
             "isMale" => false,
             "isFemale" => false,
