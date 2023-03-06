@@ -1,145 +1,145 @@
 [
-  {
-    "integer": 201509160006,
-    "long_format": "201509160006",
-    "short_format": "1509160006",
-    "separated_format": "150916-0006",
-    "separated_long": "20150916-0006",
-    "valid": false,
-    "type": "ssn",
-    "isMale": false,
-    "isFemale": true
-  },
-  {
-    "integer": 190905271474,
-    "long_format": "190905271474",
-    "short_format": "0905271474",
-    "separated_format": "090527+1474",
-    "separated_long": "19090527+1474",
-    "valid": true,
-    "type": "ssn",
-    "isMale": true,
-    "isFemale": false
-  },
-  {
-    "integer": 201406089892,
-    "long_format": "201406089892",
-    "short_format": "1406089892",
-    "separated_format": "140608-9892",
-    "separated_long": "20140608-9892",
-    "valid": false,
-    "type": "ssn",
-    "isMale": true,
-    "isFemale": false
-  },
-  {
-    "integer": 199305269996,
-    "long_format": "199305269996",
-    "short_format": "9305269996",
-    "separated_format": "930526-9996",
-    "separated_long": "19930526-9996",
-    "valid": true,
-    "type": "ssn",
-    "isMale": true,
-    "isFemale": false
-  },
-  {
-    "integer": 198810729996,
-    "long_format": "198810729996",
-    "short_format": "8810729996",
-    "separated_format": "881072-9996",
-    "separated_long": "19881072-9996",
-    "valid": false,
-    "type": "con",
-    "isMale": true,
-    "isFemale": false
-  },
-  {
-    "integer": 199405779910,
-    "long_format": "199405779910",
-    "short_format": "9405779910",
-    "separated_format": "940577-9910",
-    "separated_long": "19940577-9910",
-    "valid": true,
-    "type": "con",
-    "isMale": true,
-    "isFemale": false
-  },
-  {
-    "integer": 194904099942,
-    "long_format": "194904099942",
-    "short_format": "4904099942",
-    "separated_format": "490409-9942",
-    "separated_long": "19490409-9942",
-    "valid": false,
-    "type": "ssn",
-    "isMale": false,
-    "isFemale": true
-  },
-  {
-    "integer": 201602059964,
-    "long_format": "201602059964",
-    "short_format": "1602059964",
-    "separated_format": "160205-9964",
-    "separated_long": "20160205-9964",
-    "valid": true,
-    "type": "ssn",
-    "isMale": false,
-    "isFemale": true
-  },
-  {
-    "integer": 196708809922,
-    "long_format": "196708809922",
-    "short_format": "6708809922",
-    "separated_format": "670880-9922",
-    "separated_long": "19670880-9922",
-    "valid": false,
-    "type": "con",
-    "isMale": false,
-    "isFemale": true
-  },
-  {
-    "integer": 198405899942,
-    "long_format": "198405899942",
-    "short_format": "8405899942",
-    "separated_format": "840589-9942",
-    "separated_long": "19840589-9942",
-    "valid": true,
-    "type": "con",
-    "isMale": false,
-    "isFemale": true
-  },
-  {
-    "integer": 189910159970,
-    "long_format": "189910159970",
-    "short_format": "9910159970",
-    "separated_format": "991015+9970",
-    "separated_long": "18991015+9970",
-    "valid": true,
-    "type": "ssn",
-    "isMale": true,
-    "isFemale": false
-  },
-  {
-    "integer": 200008149916,
-    "long_format": "200008149916",
-    "short_format": "0008149916",
-    "separated_format": "000814-9916",
-    "separated_long": "20000814-9916",
-    "valid": true,
-    "type": "ssn",
-    "isMale": true,
-    "isFemale": false
-  },
-  {
-    "integer": 0,
-    "long_format": "19090527 1474",
-    "short_format": "090527 1474",
-    "separated_format": "090527 1474",
-    "separated_long": "19090527 1474",
-    "valid": false,
-    "type": "ssn",
-    "isMale": true,
-    "isFemale": false
-  }
+    {
+        "integer": 201509160006,
+        "long_format": "201509160006",
+        "short_format": "1509160006",
+        "separated_format": "150916-0006",
+        "separated_long": "20150916-0006",
+        "valid": false,
+        "type": "ssn",
+        "isMale": false,
+        "isFemale": true
+    },
+    {
+        "integer": 190905271474,
+        "long_format": "190905271474",
+        "short_format": "0905271474",
+        "separated_format": "090527+1474",
+        "separated_long": "19090527+1474",
+        "valid": true,
+        "type": "ssn",
+        "isMale": true,
+        "isFemale": false
+    },
+    {
+        "integer": 194803309994,
+        "long_format": "194803309994",
+        "short_format": "4803309994",
+        "separated_format": "480330-9994",
+        "separated_long": "19480330-9994",
+        "valid": false,
+        "type": "ssn",
+        "isMale": true,
+        "isFemale": false
+    },
+    {
+        "integer": 200404169914,
+        "long_format": "200404169914",
+        "short_format": "0404169914",
+        "separated_format": "040416-9914",
+        "separated_long": "20040416-9914",
+        "valid": true,
+        "type": "ssn",
+        "isMale": true,
+        "isFemale": false
+    },
+    {
+        "integer": 198201859993,
+        "long_format": "198201859993",
+        "short_format": "8201859993",
+        "separated_format": "820185-9993",
+        "separated_long": "19820185-9993",
+        "valid": false,
+        "type": "con",
+        "isMale": true,
+        "isFemale": false
+    },
+    {
+        "integer": 194203709995,
+        "long_format": "194203709995",
+        "short_format": "4203709995",
+        "separated_format": "420370-9995",
+        "separated_long": "19420370-9995",
+        "valid": true,
+        "type": "con",
+        "isMale": true,
+        "isFemale": false
+    },
+    {
+        "integer": 193808059941,
+        "long_format": "193808059941",
+        "short_format": "3808059941",
+        "separated_format": "380805-9941",
+        "separated_long": "19380805-9941",
+        "valid": false,
+        "type": "ssn",
+        "isMale": false,
+        "isFemale": true
+    },
+    {
+        "integer": 194610029888,
+        "long_format": "194610029888",
+        "short_format": "4610029888",
+        "separated_format": "461002-9888",
+        "separated_long": "19461002-9888",
+        "valid": true,
+        "type": "ssn",
+        "isMale": false,
+        "isFemale": true
+    },
+    {
+        "integer": 194608859907,
+        "long_format": "194608859907",
+        "short_format": "4608859907",
+        "separated_format": "460885-9907",
+        "separated_long": "19460885-9907",
+        "valid": false,
+        "type": "con",
+        "isMale": false,
+        "isFemale": true
+    },
+    {
+        "integer": 199305709900,
+        "long_format": "199305709900",
+        "short_format": "9305709900",
+        "separated_format": "930570-9900",
+        "separated_long": "19930570-9900",
+        "valid": true,
+        "type": "con",
+        "isMale": false,
+        "isFemale": true
+    },
+    {
+        "integer": 183405269972,
+        "long_format": "183405269972",
+        "short_format": "3405269972",
+        "separated_format": "340526+9972",
+        "separated_long": "18340526+9972",
+        "valid": true,
+        "type": "ssn",
+        "isMale": true,
+        "isFemale": false
+    },
+    {
+        "integer": 200005279971,
+        "long_format": "200005279971",
+        "short_format": "0005279971",
+        "separated_format": "000527-9971",
+        "separated_long": "20000527-9971",
+        "valid": true,
+        "type": "ssn",
+        "isMale": true,
+        "isFemale": false
+    },
+    {
+        "integer": 0,
+        "long_format": "19090527 1474",
+        "short_format": "090527 1474",
+        "separated_format": "090527 1474",
+        "separated_long": "19090527 1474",
+        "valid": false,
+        "type": "ssn",
+        "isMale": true,
+        "isFemale": false
+    }
 ]

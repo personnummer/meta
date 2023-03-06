@@ -1,0 +1,134 @@
+[
+    {
+        "integer": 0,
+        "long_format": "20000101P220",
+        "short_format": "000101P220",
+        "separated_format": "000101-P220",
+        "separated_long": "20000101-P220",
+        "valid": true,
+        "type": "interim",
+        "isMale": false,
+        "isFemale": false
+    },
+    {
+        "integer": 0,
+        "long_format": "20000101T220",
+        "short_format": "000101T220",
+        "separated_format": "000101-T220",
+        "separated_long": "20000101-T220",
+        "valid": true,
+        "type": "interim",
+        "isMale": false,
+        "isFemale": false
+    },
+    {
+        "integer": 0,
+        "long_format": "20000101R220",
+        "short_format": "000101R220",
+        "separated_format": "000101-R220",
+        "separated_long": "20000101-R220",
+        "valid": true,
+        "type": "interim",
+        "isMale": false,
+        "isFemale": false
+    },
+    {
+        "integer": 0,
+        "long_format": "20000101S220",
+        "short_format": "000101S220",
+        "separated_format": "000101-S220",
+        "separated_long": "20000101-S220",
+        "valid": true,
+        "type": "interim",
+        "isMale": false,
+        "isFemale": false
+    },
+    {
+        "integer": 0,
+        "long_format": "20000101U220",
+        "short_format": "000101U220",
+        "separated_format": "000101-U220",
+        "separated_long": "20000101-U220",
+        "valid": true,
+        "type": "interim",
+        "isMale": false,
+        "isFemale": false
+    },
+    {
+        "integer": 0,
+        "long_format": "20000101W220",
+        "short_format": "000101W220",
+        "separated_format": "000101-W220",
+        "separated_long": "20000101-W220",
+        "valid": true,
+        "type": "interim",
+        "isMale": false,
+        "isFemale": false
+    },
+    {
+        "integer": 0,
+        "long_format": "20000101X220",
+        "short_format": "000101X220",
+        "separated_format": "000101-X220",
+        "separated_long": "20000101-X220",
+        "valid": true,
+        "type": "interim",
+        "isMale": false,
+        "isFemale": false
+    },
+    {
+        "integer": 0,
+        "long_format": "20000101J220",
+        "short_format": "000101J220",
+        "separated_format": "000101-J220",
+        "separated_long": "20000101-J220",
+        "valid": true,
+        "type": "interim",
+        "isMale": false,
+        "isFemale": false
+    },
+    {
+        "integer": 0,
+        "long_format": "20000101K220",
+        "short_format": "000101K220",
+        "separated_format": "000101-K220",
+        "separated_long": "20000101-K220",
+        "valid": true,
+        "type": "interim",
+        "isMale": false,
+        "isFemale": false
+    },
+    {
+        "integer": 0,
+        "long_format": "20000101L220",
+        "short_format": "000101L220",
+        "separated_format": "000101-L220",
+        "separated_long": "20000101-L220",
+        "valid": true,
+        "type": "interim",
+        "isMale": false,
+        "isFemale": false
+    },
+    {
+        "integer": 0,
+        "long_format": "20000101M220",
+        "short_format": "000101M220",
+        "separated_format": "000101-M220",
+        "separated_long": "20000101-M220",
+        "valid": true,
+        "type": "interim",
+        "isMale": false,
+        "isFemale": false
+    },
+    {
+        "integer": 0,
+        "long_format": "20000101N220",
+        "short_format": "000101N220",
+        "separated_format": "000101-N220",
+        "separated_long": "20000101-N220",
+        "valid": true,
+        "type": "interim",
+        "isMale": false,
+        "isFemale": false
+    }
+]
