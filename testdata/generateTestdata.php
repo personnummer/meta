@@ -116,6 +116,8 @@ $list[] = createListObject(-100);
 // Generate person born 2000 (because of 00)
 $list[] = createListObject(2000);
 
+$list = array_merge($list, $specialItems);
+
 foreach ($list as $item) {
     $structured[$item['type']] = $structured[$item['type']] ?? [];
     foreach (['integer', 'long_format', 'short_format', 'separated_format', 'separated_long'] as $format) {
@@ -128,8 +130,6 @@ foreach ($list as $item) {
         $structured[$item['type']][$formatKey][$validKey][] = $item[$format];
     }
 }
-
-$list = array_merge($list, $specialItems);
 
 file_put_contents(__DIR__ . '/list.json', json_encode($list, JSON_PRETTY_PRINT));
 file_put_contents(__DIR__ . '/structured.json', json_encode($structured, JSON_PRETTY_PRINT));

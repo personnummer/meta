@@ -15,6 +15,7 @@ $specialItems = [
     ],
     // spec v3.1
     [
+        "integer" => 0,
         "long_format" => "20000101T220",
         "short_format" => "000101T220",
         "separated_format" => "000101-T220",
@@ -25,6 +26,7 @@ $specialItems = [
         "isFemale" => true,
     ],
     [
+        "integer" => 0,
         "long_format" => "20000101A220",
         "short_format" => "000101A220",
         "separated_format" => "000101-A220",
