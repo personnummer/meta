@@ -1,4 +1,9 @@
 <?php
+
+$specVersion = '3.1';
+
+include __DIR__ . '/specialItems.php';
+
 $structured = [];
 
 function randomNum(bool $male): int
@@ -98,21 +103,6 @@ $list = [
     createListObjectItem('190905271474', false, true, true), // js@#60
 ];
 
-$specialItems = [
-    // meta@#41
-    [
-        "integer" => 0,
-        "long_format" => "19090527 1474",
-        "short_format" => "090527 1474",
-        "separated_format" => "090527 1474",
-        "separated_long" => "19090527 1474",
-        "valid" => false,
-        "type" => "ssn",
-        "isMale"=> true,
-        "isFemale"=> false,
-    ]
-];
-
 // Generate valid and invalid males and coordination number males
 for ($i = 0; $i < 4; $i++) {
     $list[] = createListObject(0, $i > 1, true, boolval($i % 2));
@@ -128,6 +118,8 @@ $list[] = createListObject(-100);
 // Generate person born 2000 (because of 00)
 $list[] = createListObject(2000);
 
+$list = array_merge($list, $specialItems);
+
 foreach ($list as $item) {
     $structured[$item['type']] = $structured[$item['type']] ?? [];
     foreach (['integer', 'long_format', 'short_format', 'separated_format', 'separated_long'] as $format) {
@@ -141,7 +133,9 @@ foreach ($list as $item) {
     }
 }
 
-$list = array_merge($list, $specialItems);
+if (!is_dir(__DIR__ . "/$specVersion")) {
+    mkdir(__DIR__ . "/$specVersion");
+}
 
-file_put_contents(__DIR__ . '/list.json', json_encode($list, JSON_PRETTY_PRINT));
-file_put_contents(__DIR__ . '/structured.json', json_encode($structured, JSON_PRETTY_PRINT));
+file_put_contents(__DIR__ . "/$specVersion/list.json", json_encode($list, JSON_PRETTY_PRINT));
+file_put_contents(__DIR__ . "/$specVersion/structured.json", json_encode($structured, JSON_PRETTY_PRINT));
