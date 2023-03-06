@@ -225,13 +225,29 @@ This specification adds new features and includes all parts from 3.0.
 
 The package should include `getDate` function to expose the underlying date value. For coordination numbers the day should be removed with 60 days to get the correct day for a real date.
 
-## T-Number
+## Interim-Number
 
-The package should support T-numbers `YYMMDD-TXXX` and include `isInterimNumber` function in the same way as `isCoordinationNumber`
+_Also called T-Number_
 
-The `format` function should respect T-number and format the number both in the long and short way with the letter `T` in the 4-digit number.
+The package should support Interim-numbers `YYMMDD-Xnnn` (where X is a letter rather than number) and include `isInterimNumber` function in the same way as `isCoordinationNumber`
 
-Read more about T-number at [KTH](https://www.kth.se/en/student/studier/living-in-sweden/swedish-personal-identification-number/swedish-personal-identification-number-1.443883).
+The `format` function should respect Interim-number and format the number both in the long and short way with the letter at the first of the four in the 4-digit number.
+
+Read more about interim-number at [KTH](https://www.kth.se/en/student/studier/living-in-sweden/swedish-personal-identification-number/swedish-personal-identification-number-1.443883) and at [sunet](https://wiki.sunet.se/display/SWAMID/Svenska+personnummer%3A+norEduPersonNIN%2C+personalIdentityNumber+och+schacDateOfBirth).
+
+To make the package future-proof, we support all 11 interim letters: `T, R, S, U, W, X, J, K, L, M, N` where all are replaced with a `1` in the lun calculation.
+
+To not break the package for users whom do not want to make use of the interim-number implementation, the `options` object for the parse function and constructor have been re-added and should have two values:
+
+```json
+{
+  "allowCoordinationNumber": true,
+  "allowInterimNumber": false
+}
+```
+
+As seen, the coordination-number should be true by default (as it's true by default in the v3.0 api) while the interim-number is false by default (as it does not exist yet and is used a lot more rarely).
+
 
 ### Updated pseudo-interface
 
