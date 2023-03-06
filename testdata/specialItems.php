@@ -1,5 +1,24 @@
 <?php
 
+function createInterimNumbers() {
+    $numbers = [];
+    $letters = ['P', 'T','R','S','U','W','X','J','K','L','M','N'];
+    foreach ($letters as $letter) {
+        $numbers[] = [
+            "integer" => 0,
+            "long_format" => sprintf("20000101%s220",$letter),
+            "short_format" => sprintf("000101%s220",$letter),
+            "separated_format" => sprintf("000101-%s220",$letter),
+            "separated_long" => sprintf("20000101-%s220",$letter),
+            "valid" => false,
+            "type" => "interim",
+            "isMale" => false,
+            "isFemale" => false,
+        ];
+    }
+    return $numbers;
+}
+
 $specialItems = [
     // meta@#41
     [
@@ -13,18 +32,8 @@ $specialItems = [
         "isMale"=> true,
         "isFemale"=> false,
     ],
+    ...createInterimNumbers(),
     // spec v3.1
-    [
-        "integer" => 0,
-        "long_format" => "20000101T220",
-        "short_format" => "000101T220",
-        "separated_format" => "000101-T220",
-        "separated_long" => "20000101-T220",
-        "valid" => true,
-        "type" => "interim",
-        "isMale" => false,
-        "isFemale" => true,
-    ],
     [
         "integer" => 0,
         "long_format" => "20000101A220",
