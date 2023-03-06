@@ -1,4 +1,7 @@
 <?php
+
+include __DIR__ . '/specialItems.php';
+
 $structured = [];
 
 function randomNum(bool $male): int
@@ -96,21 +99,6 @@ function createListObject(int $year = 0, bool $con = false, bool $male = true, b
 $list = [
     createListObjectItem('201509160006', false, false, false),
     createListObjectItem('190905271474', false, true, true), // js@#60
-];
-
-$specialItems = [
-    // meta@#41
-    [
-        "integer" => 0,
-        "long_format" => "19090527 1474",
-        "short_format" => "090527 1474",
-        "separated_format" => "090527 1474",
-        "separated_long" => "19090527 1474",
-        "valid" => false,
-        "type" => "ssn",
-        "isMale"=> true,
-        "isFemale"=> false,
-    ]
 ];
 
 // Generate valid and invalid males and coordination number males
