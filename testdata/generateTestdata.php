@@ -15,7 +15,7 @@ function createInterimNumbers() {
             "valid" => true,
             "type" => "interim",
             "isMale" => false,
-            "isFemale" => false,
+            "isFemale" => true,
         ];
     }
     return $numbers;
