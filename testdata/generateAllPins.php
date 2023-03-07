@@ -21,9 +21,14 @@ function fetch_numbers($url) {
     $context = stream_context_create($options);
     $result = file_get_contents($url, false, $context);
     $json = json_decode($result, 1);
+
     $list = array_map(function ($item) {
         return $item['testpersonnummer'];
     }, $json['results']);
+
+    $list = array_filter($list, function ($item) {
+        return !empty($item);
+    });
 
     if (!empty($json['next'])) {
         return array_merge($list, fetch_numbers($json['next']));
