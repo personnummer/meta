@@ -235,7 +235,7 @@ The `format` function should respect Interim-number and format the number both i
 
 Read more about interim-number at [KTH](https://www.kth.se/en/student/studier/living-in-sweden/swedish-personal-identification-number/swedish-personal-identification-number-1.443883) and at [sunet](https://wiki.sunet.se/display/SWAMID/Svenska+personnummer%3A+norEduPersonNIN%2C+personalIdentityNumber+och+schacDateOfBirth).
 
-To make the package future-proof, we support all 11 interim letters: `T, R, S, U, W, X, J, K, L, M, N` where all are replaced with a `1` in the lun calculation.
+To make the package future-proof, we support all 11 interim letters: `T, R, S, U, W, X, J, K, L, M, N` where all are replaced with a `1` in the luhn calculation.
 
 To not break the package for users whom do not want to make use of the interim-number implementation, the `options` object for the parse function and constructor have been re-added and should have two values:
 
