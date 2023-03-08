@@ -4,7 +4,7 @@ $structured = [];
 
 function createInterimNumbers() {
     $numbers = [];
-    $letters = ['P', 'T','R','S','U','W','X','J','K','L','M','N'];
+    $letters = ['T','R','S','U','W','X','J','K','L','M','N'];
     foreach ($letters as $letter) {
         $numbers[] = [
             "integer" => 0,

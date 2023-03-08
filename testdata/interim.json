@@ -1,17 +1,6 @@
 [
     {
         "integer": 0,
-        "long_format": "20000101P220",
-        "short_format": "000101P220",
-        "separated_format": "000101-P220",
-        "separated_long": "20000101-P220",
-        "valid": true,
-        "type": "interim",
-        "isMale": false,
-        "isFemale": true
-    },
-    {
-        "integer": 0,
         "long_format": "20000101T220",
         "short_format": "000101T220",
         "separated_format": "000101-T220",
