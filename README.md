@@ -1,5 +1,5 @@
 # meta
-Organization meta.Find all implementations on [personnummer.dev](https://personnummer.dev).
+Organization meta. Find all implementations on [personnummer.dev](https://personnummer.dev).
 
 ## Package meta
 
