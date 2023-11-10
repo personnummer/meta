@@ -116,6 +116,7 @@ function createListObject(int $year = 0, bool $con = false, bool $male = true, b
 $list = [
     createListObjectItem('201509160006', false, false, false),
     createListObjectItem('190905271474', false, true, true), // js@#60
+    createListObjectItem('200002292399', false, true, true), // python@#57
 ];
 
 // Generate valid and invalid males and coordination number males
