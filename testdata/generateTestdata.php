@@ -18,6 +18,20 @@ function createInterimNumbers() {
             "isFemale" => true,
         ];
     }
+
+    // Invalid interim.
+    $numbers[] = [
+        "integer" => 0,
+        "long_format" => "20000101E221",
+        "short_format" => "000101E221",
+        "separated_format" => "000101-E221",
+        "separated_long" => "20000101-E221",
+        "valid" => false,
+        "type" => "interim",
+        "isMale" => false,
+        "isFemale" => true
+    ];
+
     return $numbers;
 }
 
