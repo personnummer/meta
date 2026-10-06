@@ -9,7 +9,7 @@ Example of `.meta.yaml`
 
 ```yaml
 name: "JavaScript"
-maintainer: "@frozzare"
+maintainer: "@rasmusbe"
 spec: 3.1
 workflow: "nodejs.yml"
 ```
@@ -246,3 +246,7 @@ interface Personnummer {
     public function isInterimNumber() : boolean;
 }
 ```
+
+## In memoriam
+
+Fredrik "Frozzare" Forsmo (1991-2026) was the initiator, co-founder and a core contributor of the personnummer project. This repository carries his work. He is missed.
